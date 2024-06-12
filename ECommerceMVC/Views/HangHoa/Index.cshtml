@@ -1,0 +1,20 @@
+﻿@model IEnumerable<ECommerceMVC.ViewModels.HangHoaVM>
+
+@{
+	ViewData["Title"] = "Index";
+	Layout = "_DanhSachHangHoa";
+}
+
+<!-- Single Page Header start -->
+@section BreadCum {
+	<div class="container-fluid page-header py-5">
+		<h1 class="text-center text-white display-6">Shop Văn Phòng Phẩm</h1>
+		<ol class="breadcrumb justify-content-center mb-0">
+			
+		</ol>
+	</div>
+}
+<!-- Single Page Header End -->
+
+@await Html.PartialAsync("ProductItem", Model)
+
